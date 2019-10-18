@@ -1,0 +1,69 @@
+body {
+    background-color: #1b192c;
+    height: 100%;
+}
+
+.parallex {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #1f1d33;
+}
+
+section {
+    margin: 50px 0px 50px 0px;
+}
+
+.parallex-bg {
+    background-image: url("../__images/bg.png");
+}
+
+.parallex-bg:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(24, 23, 39, .5);
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+.vh-80 {
+    height: 80vh !important;
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white;
+    font-weight: 600;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    transition: 500ms all;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #e8b409;
+}
+
+.navbar-brand .nav-logo {
+    height: 50px;
+}
+
+.sticky-footer {
+    flex-shrink: none;
+}
+
+.guide-container {
+    transition: transform 130ms linear;
+}
+
+.guide-container:hover {
+    transform: scale(1.1);
+}
