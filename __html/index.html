@@ -4,115 +4,733 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CSS IMPORT -->
 
     <link rel="stylesheet" href="__css/__bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="__css/global.css">
+    <link rel="stylesheet" href="__css/__slidebars/slidebars.min.css">
 
     <!--  -->
     <title>Document</title>
 </head>
 
 <body>
-    <header class="parallex parallex-bg">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a href="/" class="navbar-brand text-white"><img src="__images/logo.png" class="img-fluid nav-logo"></a>
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbar9">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav ml-auto text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pages</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="container-fluid d-flex vh-80">
-            <div class="row justify-content-center align-items-center text-center">
-                <div class="jumbotron-fluid col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
-                    <h1 class="display-4 text-white text-uppercase">Bem - vindo</h1>
-                    <h3 class="display-5 text-white text-uppercase">Saint Seiya Awakening</h3>
-                    <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat tellus eleifend, suscipit enim at, pretium turpis. In ultrices tincidunt venenatis. Maecenas id magna sed erat mattis malesuada. Maecenas nec vestibulum nisi,
-                        a malesuada justo. Vivamus vel elit in ex aliquet pulvinar eget eu enim. Quisque sapien mi, consequat eget posuere a, suscipit in odio. Praesent eget ante nec purus lacinia condimentum at quis sapien.</p>
-                </div>
+    <div canvas="container push" id="allpage">
+        <header class="parallex parallex-bg">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a href="/" class="navbar-brand text-white"><img src="__images/logo.png" class="img-fluid nav-logo"></a>
+                    <a class="navbar-toggler float-right menu-link border-0" id="toggle-sidenav" href="#menu">
+                        <span class="text-white"><i class="fas fa-bars icon-menu"></i></span>
+                    </a>
+                    <div class="navbar-collapse collapse" id="#navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-uppercase">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="container h-100">
-                <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col-12 mb-3">
-                        <h2 class="text-center text-uppercase text-white">Guias</h2>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                        <a class="row guide-container text-center text-white text-decoration-none" href="#">
-                            <div class="col-12"><img src="__images/example.png"></div>
-                            <div class="col-12"><strong class="text-uppercase">Cosmos</strong></div>
-                            <div class="col-12">
-                                <p>Informações sobre os cosmos presentes no jogo.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                        <a class="row guide-container text-center text-white text-decoration-none" href="#">
-                            <div class="col-12"><img src="__images/example.png"></div>
-                            <div class="col-12"><strong class="text-uppercase">Personagens</strong></div>
-                            <div class="col-12">
-                                <p>Todos personagens (atuais) e suas habilidades</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                        <a class="row guide-container text-center text-white text-decoration-none" href="#">
-                            <div class="col-12"><img src="__images/example.png"></div>
-                            <div class="col-12"><strong class="text-uppercase">Level UP</strong></div>
-                            <div class="col-12">
-                                <p>Tabela de experiência para upar os personagens.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
-                        <a class="row guide-container text-center text-white text-decoration-none" href="#">
-                            <div class="col-12"><img src="__images/example.png"></div>
-                            <div class="col-12"><strong class="text-uppercase">Dicas</strong></div>
-                            <div class="col-12">
-                                <p>Dicas para iniciantes e veteranos no jogo.</p>
-                            </div>
-                        </a>
+            <div class="container-fluid d-flex vh-80">
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="jumbotron-fluid col-12 col-sm-12 col-md-10 col-lg-8 col-xl-8">
+                        <h1 class="display-4 text-white text-uppercase">Bem - vindo</h1>
+                        <h3 class="display-5 text-white text-uppercase">Saint Seiya Awakening</h3>
+                        <p class="lead text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur placerat tellus eleifend, suscipit enim at, pretium turpis. In ultrices tincidunt venenatis. Maecenas id magna sed erat mattis malesuada.</p>
                     </div>
                 </div>
             </div>
+        </header>
+        <main>
+            <section class="news-section">
+                <div class="container h-100 py-3">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-12 mb-3 text-center">
+                            <h2 class="text-uppercase text-white">Notícias</h2>
+                            <p class="lead mb-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="col-12 mb-3">
+                                <nav class="pd-navigation tabs-index">
+                                    <ul class="nav" role="tablist">
+                                        <li role="menuitem"><a href="" data-target="#tab-allposts" data-toggle="tab">Todas publicações</a></li>
+                                        <li role="menuitem"><a href="" data-target="#tab-att" data-toggle="tab">Atualizações</a></li>
+                                        <li role="menuitem"><a href="" data-target="#tab-events" data-toggle="tab">Eventos</a></li>
+                                        <li role="menuitem"><a href="" data-target="#tab-activity" data-toggle="tab">Atividades</a></li>
+                                        <li role="menuitem"><a href="" data-target="#tab-banner" data-toggle="tab">Banners</a></li>
+                                    </ul>
+
+                                </nav>
+                                <div id="tabsJustifiedContent" class="tab-content mt-3">
+                                    <div id="tab-allposts" class="tab-pane fade active show">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 mb-3">
+                                                <h2 class="text-uppercase text-left text-white">#Publicações</h2>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 justify-content-center load-div">
+                                                <button type="button" class="btn-load" style="max-width: 200px;">Carregar mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="tab-att" class="tab-pane fade">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 mb-3">
+                                                <h2 class="text-uppercase text-left text-white">#Atualizações</h2>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 justify-content-center load-div">
+                                                <button type="button" class="btn-load" style="max-width: 200px;">Carregar mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-events" class="tab-pane fade">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 mb-3">
+                                                <h2 class="text-uppercase text-left text-white">#Eventos</h2>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">20/10/2019 ás 21:14 (GMT-3)</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 justify-content-center load-div">
+                                                <button type="button" class="btn-load" style="max-width: 200px;">Carregar mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-activity" class="tab-pane fade">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 mb-3">
+                                                <h2 class="text-uppercase text-left text-white">#Atividades</h2>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 justify-content-center load-div">
+                                                <button type="button" class="btn-load" style="max-width: 200px;">Carregar mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-banner" class="tab-pane fade">
+                                        <div class="row align-items-center">
+                                            <div class="col-12 mb-3">
+                                                <h2 class="text-uppercase text-left text-white">#Banner</h2>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-5 d-flex">
+                                                <article class="post-card d-flex m-auto">
+                                                    <a href="#" class="post-card-image-link">
+                                                        <img src="__images/example.png" class="post-card-image">
+                                                    </a>
+                                                    <div class="post-card-content">
+                                                        <a class="post-card-content-link" href="/pve-joorjis-class-balancing-blog/">
+                                                            <header class="post-card-header">
+                                                                <span class="post-card-tags">Dev Blogs</span>
+                                                                <h2 class="post-card-title">ATT</h2>
+                                                            </header>
+                                                            <section class="post-card-excerpt">
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem facilis suscipit vel repudiandae voluptates dicta maiores minus. Et, saepe aliquid at fugiat possimus ipsam
+                                                                    laudantium ratione dolores recusandae.</p>
+                                                            </section>
+                                                        </a>
+                                                        <footer class="post-card-meta">
+                                                            <ul class="author-list">
+                                                                <li class="author-list-item">
+                                                                    <a href="/author/joorji/" class="static-avatar">
+                                                                        <img class="author-profile-image" src="/content/images/size/w100/2019/10/firefox_2017-11-29_00-33-32.png" alt="Joorji">
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                            <span class="reading-time">10 min read</span>
+                                                        </footer>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col-12 justify-content-center load-div">
+                                                <button type="button" class="btn-load" style="max-width: 200px;">Carregar mais</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="divider div-transparent div-dot"></div>
             </div>
-        </section>
-    </main>
-    <footer class="py-4 bg-dark text-white-50 sticky-footer">
-        <div class="container text-center">
-            <small>Copyright &copy; Your Website</small>
-        </div>
-    </footer>
+            <section class="guide-section">
+                <div class="container h-100 py-3">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-12 mb-3 text-center">
+                            <h2 class="text-uppercase text-white">Guias</h2>
+                            <p class="lead mb-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center mb-3 guide-block d-flex">
+                            <article class="guide-block m-auto d-flex">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="__images/guide.png" alt="" width="150" class="img-fluid mb-3 shadow-sm"><br>
+                                    <span>GUIDE</span>
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet.
+                                    </p>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center mb-3 guide-block d-flex">
+                            <article class="guide-block m-auto d-flex">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="__images/guide.png" alt="" width="150" class="img-fluid mb-3 shadow-sm"><br>
+                                    <span>GUIDE</span>
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet.
+                                    </p>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center mb-3 guide-block d-flex">
+                            <article class="guide-block m-auto d-flex">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="__images/guide.png" alt="" width="150" class="img-fluid mb-3 shadow-sm"><br>
+                                    <span>GUIDE</span>
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet.
+                                    </p>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center mb-3 guide-block d-flex">
+                            <article class="guide-block m-auto d-flex">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="__images/guide.png" alt="" width="150" class="img-fluid mb-3 shadow-sm"><br>
+                                    <span>GUIDE</span>
+                                    <p class="lead">
+                                        Vivamus sagittis lacus vel augue laoreet.
+                                    </p>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="divider div-transparent div-dot"></div>
+            </div>
+            <section class="team-guide">
+                <div class="container py-3">
+                    <div class="row text-center text-white">
+                        <div class="col-lg-8 mx-auto text-center mb-3">
+                            <h2 class="text-uppercase text-white">Nossa equipe</h2>
+                            <p class="lead mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe libero voluptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-xl-3 col-sm-6 mb-5">
+                            <div class="rounded shadow-sm"><img src="__images/plm.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0 text-white">Samuel (PLM)</h5><span class="small text-uppercase text-muted">Streamer - Apoiador</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-discord"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitch"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-5">
+                            <div class="rounded shadow-sm"><img src="__images/plm.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0 text-white">Samuel (PLM)</h5><span class="small text-uppercase text-muted">Streamer - Apoiador</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-discord"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitch"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-5">
+                            <div class="rounded shadow-sm"><img src="__images/plm.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0 text-white">Samuel (PLM)</h5><span class="small text-uppercase text-muted">Streamer - Apoiador</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-discord"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitch"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-5">
+                            <div class="rounded shadow-sm"><img src="__images/plm.jpg" alt="" width="200" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                <h5 class="mb-0 text-white">Samuel (PLM)</h5><span class="small text-uppercase text-muted">Streamer - Apoiador</span>
+                                <ul class="social mb-0 list-inline mt-3">
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-discord"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitch"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="py-4 bg-dark text-white-50 sticky-footer">
+            <div class="container text-center">
+                <small>Copyright &copy; Your Website</small>
+            </div>
+        </footer>
+    </div>
+    <div off-canvas="sidenav-1 right push" id="sidenav">
+        <header class="text-uppercase">
+            SSKOTZ Academy
+        </header>
+        <ul>
+            <li><a href="#" class="text-uppercase">Home</a></li>
+            <li><a href="#" class="text-uppercase">Pages</a></li>
+            <li><a href="#" class="text-uppercase">Gallery</a></li>
+            <li><a href="#" class="text-uppercase">News</a></li>
+            <li><a href="#" class="text-uppercase">Contact</a></li>
+        </ul>
+    </div>
+
+
     <!-- JS IMPORT -->
 
     <script src="__js/__jquery/jquery.min.js"></script>
     <script src="__js/__bootstrap/bootstrap.min.js"></script>
+    <script src="__js/__slidebars/slidebars.min.js"></script>
+    <script>
+        (function($) {
+            var controller = new slidebars();
+            controller.init();
+            $('#toggle-sidenav').on('click', function(event) {
+                event.stopPropagation();
+                event.preventDefault();
 
+                controller.toggle('sidenav-1');
+            });
+            $("#allpage").on('click', function(event) {
+                controller.close();
+            })
+            $(controller.events).on('opening', function(event, id) {
+                $(".icon-menu").removeClass("fas fa-bars");
+                $(".icon-menu").addClass("fas fa-times");
+            });
+            $(controller.events).on('closing', function(event, id) {
+                $(".icon-menu").removeClass("fas fa-times");
+                $(".icon-menu").addClass("fas fa-bars");
+            });
+        })(jQuery);
+    </script>
     <!--  -->
 </body>
 
